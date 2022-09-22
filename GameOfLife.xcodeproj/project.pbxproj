@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D121B39728DCBF6700BA0736 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D121B39628DCBF6700BA0736 /* main.cpp */; };
+		D121B3A228DCC03100BA0736 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D121B3A128DCC03100BA0736 /* Cocoa.framework */; };
+		D121B3A428DCC03500BA0736 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D121B3A328DCC03500BA0736 /* IOKit.framework */; };
+		D121B3A628DCC03900BA0736 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D121B3A528DCC03900BA0736 /* OpenGL.framework */; };
+		D121B3B428DCC04C00BA0736 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D121B3AD28DCC04200BA0736 /* libGLEW.a */; };
+		D121B3B528DCC05700BA0736 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D121B3B328DCC04200BA0736 /* libglfw3.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D121B39128DCBF6700BA0736 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D121B39328DCBF6700BA0736 /* GameOfLife */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameOfLife; sourceTree = BUILT_PRODUCTS_DIR; };
+		D121B39628DCBF6700BA0736 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D121B3A128DCC03100BA0736 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D121B3A328DCC03500BA0736 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		D121B3A528DCC03900BA0736 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D121B3AB28DCC04200BA0736 /* glew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		D121B3AD28DCC04200BA0736 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLEW.a; sourceTree = "<group>"; };
+		D121B3B128DCC04200BA0736 /* glfw3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
+		D121B3B328DCC04200BA0736 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglfw3.a; sourceTree = "<group>"; };
+		D121B3B728DCC3CE00BA0736 /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		D121B3B828DCC43A00BA0736 /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D121B39028DCBF6700BA0736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D121B3B528DCC05700BA0736 /* libglfw3.a in Frameworks */,
+				D121B3B428DCC04C00BA0736 /* libGLEW.a in Frameworks */,
+				D121B3A628DCC03900BA0736 /* OpenGL.framework in Frameworks */,
+				D121B3A428DCC03500BA0736 /* IOKit.framework in Frameworks */,
+				D121B3A228DCC03100BA0736 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D121B38A28DCBF6700BA0736 = {
+			isa = PBXGroup;
+			children = (
+				D121B39528DCBF6700BA0736 /* GameOfLife */,
+				D121B39428DCBF6700BA0736 /* Products */,
+				D121B3A028DCC03000BA0736 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D121B39428DCBF6700BA0736 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D121B39328DCBF6700BA0736 /* GameOfLife */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D121B39528DCBF6700BA0736 /* GameOfLife */ = {
+			isa = PBXGroup;
+			children = (
+				D121B39E28DCBF8000BA0736 /* res */,
+				D121B39D28DCBF7A00BA0736 /* src */,
+			);
+			path = GameOfLife;
+			sourceTree = "<group>";
+		};
+		D121B39D28DCBF7A00BA0736 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D121B39628DCBF6700BA0736 /* main.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D121B39E28DCBF8000BA0736 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				D121B39F28DCBF8500BA0736 /* shaders */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		D121B39F28DCBF8500BA0736 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3B728DCC3CE00BA0736 /* shader.vs */,
+				D121B3B828DCC43A00BA0736 /* shader.fs */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		D121B3A028DCC03000BA0736 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3A728DCC04200BA0736 /* Dependencies */,
+				D121B3A528DCC03900BA0736 /* OpenGL.framework */,
+				D121B3A328DCC03500BA0736 /* IOKit.framework */,
+				D121B3A128DCC03100BA0736 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D121B3A728DCC04200BA0736 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3A828DCC04200BA0736 /* GLEW */,
+				D121B3AE28DCC04200BA0736 /* GLFW */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		D121B3A828DCC04200BA0736 /* GLEW */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3A928DCC04200BA0736 /* include */,
+				D121B3AC28DCC04200BA0736 /* lib */,
+			);
+			path = GLEW;
+			sourceTree = "<group>";
+		};
+		D121B3A928DCC04200BA0736 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3AA28DCC04200BA0736 /* GL */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D121B3AA28DCC04200BA0736 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3AB28DCC04200BA0736 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		D121B3AC28DCC04200BA0736 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3AD28DCC04200BA0736 /* libGLEW.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D121B3AE28DCC04200BA0736 /* GLFW */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3AF28DCC04200BA0736 /* include */,
+				D121B3B228DCC04200BA0736 /* lib-macos */,
+			);
+			path = GLFW;
+			sourceTree = "<group>";
+		};
+		D121B3AF28DCC04200BA0736 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3B028DCC04200BA0736 /* GLFW */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D121B3B028DCC04200BA0736 /* GLFW */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3B128DCC04200BA0736 /* glfw3.h */,
+			);
+			path = GLFW;
+			sourceTree = "<group>";
+		};
+		D121B3B228DCC04200BA0736 /* lib-macos */ = {
+			isa = PBXGroup;
+			children = (
+				D121B3B328DCC04200BA0736 /* libglfw3.a */,
+			);
+			path = "lib-macos";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D121B39228DCBF6700BA0736 /* GameOfLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D121B39A28DCBF6700BA0736 /* Build configuration list for PBXNativeTarget "GameOfLife" */;
+			buildPhases = (
+				D121B38F28DCBF6700BA0736 /* Sources */,
+				D121B39028DCBF6700BA0736 /* Frameworks */,
+				D121B39128DCBF6700BA0736 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameOfLife;
+			productName = GameOfLife;
+			productReference = D121B39328DCBF6700BA0736 /* GameOfLife */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D121B38B28DCBF6700BA0736 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D121B39228DCBF6700BA0736 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = D121B38E28DCBF6700BA0736 /* Build configuration list for PBXProject "GameOfLife" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D121B38A28DCBF6700BA0736;
+			productRefGroup = D121B39428DCBF6700BA0736 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D121B39228DCBF6700BA0736 /* GameOfLife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D121B38F28DCBF6700BA0736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D121B39728DCBF6700BA0736 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D121B39828DCBF6700BA0736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D121B39928DCBF6700BA0736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D121B39B28DCBF6700BA0736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/DEPENDENCIES/GLFW/include",
+					"$(PROJECT_DIR)/DEPENDENCIES/GLEW/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Dependencies/GLFW/lib-macos",
+					"$(PROJECT_DIR)/Dependencies/GLEW/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D121B39C28DCBF6700BA0736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/DEPENDENCIES/GLFW/include",
+					"$(PROJECT_DIR)/DEPENDENCIES/GLEW/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Dependencies/GLFW/lib-macos",
+					"$(PROJECT_DIR)/Dependencies/GLEW/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D121B38E28DCBF6700BA0736 /* Build configuration list for PBXProject "GameOfLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D121B39828DCBF6700BA0736 /* Debug */,
+				D121B39928DCBF6700BA0736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D121B39A28DCBF6700BA0736 /* Build configuration list for PBXNativeTarget "GameOfLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D121B39B28DCBF6700BA0736 /* Debug */,
+				D121B39C28DCBF6700BA0736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D121B38B28DCBF6700BA0736 /* Project object */;
+}
